@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Version>1.0.0</Version>
+        <PackageId>MoqPrivacyAnalyzer</PackageId>
+        <Authors>Collin Alpert</Authors>
+        <Title>Roslyn Analyzer to detect privacy-compromised installed versions of Moq.</Title>
+        <Description>This package contains a Roslyn Analyzers to detect the reference of a version of Moq which has privacy-related issues.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/CollinAlpert/MoqPrivacyAnalyzer</PackageProjectUrl>
+        <PackageTags>dotnet roslyn-analyzer roslyn</PackageTags>
+        <Copyright>2023 © Collin Alpert</Copyright>
+        <NoWarn>RS2008</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>MoqPrivacyAnalyzer.Tests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+</Project>

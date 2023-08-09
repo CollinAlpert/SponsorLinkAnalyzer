@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqPrivacyAnalyzer.Tests", "MoqPrivacyAnalyzer.Tests\MoqPrivacyAnalyzer.Tests.csproj", "{2066339C-4CC8-4198-A460-AFDAFF7DF73E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqPrivacyAnalyzer", "MoqPrivacyAnalyzer\MoqPrivacyAnalyzer.csproj", "{6BD9E5A7-ED52-498E-8E83-CA026D053FAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2066339C-4CC8-4198-A460-AFDAFF7DF73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2066339C-4CC8-4198-A460-AFDAFF7DF73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2066339C-4CC8-4198-A460-AFDAFF7DF73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2066339C-4CC8-4198-A460-AFDAFF7DF73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD9E5A7-ED52-498E-8E83-CA026D053FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD9E5A7-ED52-498E-8E83-CA026D053FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD9E5A7-ED52-498E-8E83-CA026D053FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD9E5A7-ED52-498E-8E83-CA026D053FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
