@@ -4,9 +4,11 @@
         <Version>1.0.0</Version>
         <PackageId>MoqPrivacyAnalyzer</PackageId>
         <Authors>Collin Alpert</Authors>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <Title>Roslyn Analyzer to detect privacy-compromised installed versions of Moq.</Title>
         <Description>This package contains a Roslyn Analyzers to detect the reference of a version of Moq which has privacy-related issues.</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/CollinAlpert/MoqPrivacyAnalyzer</RepositoryUrl>
         <PackageProjectUrl>https://github.com/CollinAlpert/MoqPrivacyAnalyzer</PackageProjectUrl>
         <PackageTags>dotnet roslyn-analyzer roslyn</PackageTags>
         <Copyright>2023 © Collin Alpert</Copyright>
@@ -19,6 +21,7 @@
 
     <ItemGroup>
         <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false"/>
     </ItemGroup>
 
