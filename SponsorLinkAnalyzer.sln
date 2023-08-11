@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqPrivacyAnalyzer.Tests", "MoqPrivacyAnalyzer.Tests\MoqPrivacyAnalyzer.Tests.csproj", "{2066339C-4CC8-4198-A460-AFDAFF7DF73E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SponsorLinkAnalyzer.Tests", "SponsorLinkAnalyzer.Tests\SponsorLinkAnalyzer.Tests.csproj", "{2066339C-4CC8-4198-A460-AFDAFF7DF73E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqPrivacyAnalyzer", "MoqPrivacyAnalyzer\MoqPrivacyAnalyzer.csproj", "{6BD9E5A7-ED52-498E-8E83-CA026D053FAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SponsorLinkAnalyzer", "SponsorLinkAnalyzer\SponsorLinkAnalyzer.csproj", "{6BD9E5A7-ED52-498E-8E83-CA026D053FAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,11 +6,11 @@ using Microsoft.CodeAnalysis.CSharp.Testing;
 using Microsoft.CodeAnalysis.Testing;
 using Microsoft.CodeAnalysis.Testing.Verifiers;
 
-namespace MoqPrivacyAnalyzer.Tests;
+namespace SponsorLinkAnalyzer.Tests;
 
-public sealed class MoqPrivacyCodeFixTest : CSharpCodeFixTest<MoqPrivacyAnalyzer, EmptyCodeFixProvider, XUnitVerifier>
+public sealed class SponsorLinkCodeFixTest : CSharpCodeFixTest<SponsorLinkAnalyzer, EmptyCodeFixProvider, XUnitVerifier>
 {
-	static MoqPrivacyCodeFixTest()
+	static SponsorLinkCodeFixTest()
 	{
 		// If we have outdated defaults from the host unit test application targeting an older .NET Framework, use more
 		// reasonable TLS protocol version for outgoing connections.
@@ -28,7 +28,7 @@ public sealed class MoqPrivacyCodeFixTest : CSharpCodeFixTest<MoqPrivacyAnalyzer
 
 	internal static readonly ImmutableDictionary<string, ReportDiagnostic> NullableWarnings = GetNullableWarningsFromCompiler();
 
-	public MoqPrivacyCodeFixTest()
+	public SponsorLinkCodeFixTest()
 	{
 		ReferenceAssemblies = ReferenceAssemblies.Default;
 	}

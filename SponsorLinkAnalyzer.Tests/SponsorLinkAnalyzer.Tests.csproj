@@ -15,7 +15,7 @@
     </ItemGroup>
     
     <ItemGroup>
-      <ProjectReference Include="..\MoqPrivacyAnalyzer\MoqPrivacyAnalyzer.csproj" />
+      <ProjectReference Include="..\SponsorLinkAnalyzer\SponsorLinkAnalyzer.csproj" />
     </ItemGroup>
 
 </Project>

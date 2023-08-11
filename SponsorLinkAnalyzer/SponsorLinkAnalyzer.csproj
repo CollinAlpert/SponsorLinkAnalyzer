@@ -2,14 +2,14 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <Version>1.0.0</Version>
-        <PackageId>MoqPrivacyAnalyzer</PackageId>
+        <PackageId>SponsorLinkAnalyzer</PackageId>
         <Authors>Collin Alpert</Authors>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <Title>Roslyn Analyzer to detect privacy-compromised installed versions of Moq.</Title>
-        <Description>This package contains a Roslyn Analyzers to detect the reference of a version of Moq which has privacy-related issues.</Description>
+        <Title>Roslyn Analyzer to detect privacy-compromised dependencies.</Title>
+        <Description>This package contains a Roslyn Analyzers to detect the reference of a dependency which has privacy-related issues.</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <RepositoryUrl>https://github.com/CollinAlpert/MoqPrivacyAnalyzer</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/CollinAlpert/MoqPrivacyAnalyzer</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/CollinAlpert/SponsorLinkAnalyzer</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/CollinAlpert/SponsorLinkAnalyzer</PackageProjectUrl>
         <PackageTags>dotnet roslyn-analyzer roslyn</PackageTags>
         <Copyright>2023 © Collin Alpert</Copyright>
         <NoWarn>RS2008</NoWarn>
@@ -27,7 +27,7 @@
 
     <ItemGroup>
         <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-            <_Parameter1>MoqPrivacyAnalyzer.Tests</_Parameter1>
+            <_Parameter1>SponsorLinkAnalyzer.Tests</_Parameter1>
         </AssemblyAttribute>
     </ItemGroup>
 

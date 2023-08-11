@@ -1,22 +1,21 @@
-﻿using System;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace MoqPrivacyAnalyzer
+namespace SponsorLinkAnalyzer
 {
 	[DiagnosticAnalyzer(LanguageNames.CSharp)]
-	public class MoqPrivacyAnalyzer : DiagnosticAnalyzer
+	public class SponsorLinkAnalyzer : DiagnosticAnalyzer
 	{
 		internal static readonly DiagnosticDescriptor DiagnosticDescriptor = new DiagnosticDescriptor(
-			"MOQ1",
-			"Do not use Moq v4.20",
-			"Do not use Moq v4.20 or later due to privacy concerns",
+			"PRIVACY001",
+			"Remove SponsorLink dependency",
+			"Do not depend on SponsorLink",
 			"Privacy",
 			DiagnosticSeverity.Error,
 			true,
-			"Moq v4.20 and later may log e-mail addresses in a closed infrastructure. It is recommended to use an earlier version."
+			"SponsorLink may log e-mail addresses in a closed infrastructure. It is recommended to remove this dependency."
 		);
 
 		public override void Initialize(AnalysisContext context)
@@ -25,7 +24,7 @@ namespace MoqPrivacyAnalyzer
 			context.EnableConcurrentExecution();
 			context.RegisterCompilationAction(ctx =>
 			{
-				if(ctx.Compilation.ReferencedAssemblyNames.Any(a => a.Name == "Moq" && a.Version >= new Version(4, 20)))
+				if(ctx.Compilation.ReferencedAssemblyNames.Any(a => a.Name == "SponsorLink"))
 				{
 					ctx.ReportDiagnostic(Diagnostic.Create(DiagnosticDescriptor, null));
 				}
