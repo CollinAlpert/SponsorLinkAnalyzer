@@ -7,7 +7,7 @@ namespace SponsorLinkAnalyzer.Tests;
 public class SponsorLinkAnalyzerTests
 {
 	[Fact]
-	public Task WhenMoqIsNotInstalledNoDiagnostic()
+	public Task WhenSponsorLinkIsNotInstalledNoDiagnostic()
 	{
 		return new SponsorLinkCodeFixTest
 		{
@@ -17,7 +17,7 @@ public class SponsorLinkAnalyzerTests
 	}
 
 	[Fact]
-	public Task WhenMoqInHigherVersionIsInstalled_Diagnostic()
+	public Task WhenSponsorLinkIsInstalled_Diagnostic()
 	{
 		return new SponsorLinkCodeFixTest
 		{

@@ -24,7 +24,7 @@ namespace SponsorLinkAnalyzer
 			context.EnableConcurrentExecution();
 			context.RegisterCompilationAction(ctx =>
 			{
-				if(ctx.Compilation.ReferencedAssemblyNames.Any(a => a.Name == "SponsorLink"))
+				if(ctx.Compilation.ReferencedAssemblyNames.Any(a => a.Name == "Devlooped.SponsorLink"))
 				{
 					ctx.ReportDiagnostic(Diagnostic.Create(DiagnosticDescriptor, null));
 				}
